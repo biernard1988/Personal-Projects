@@ -1,0 +1,32 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1c24;
+}
+
+div.spinner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #189cf7 0deg 60deg,
+    #48c930 60deg 120deg,
+    #fed602 120deg 180deg,
+    #ffa409 180deg 240deg,
+    #ff524b 240deg 300deg,
+    #c46bdd 300deg 360deg
+  );
+  animation: round 0.6s linear infinite;
+}
+
+@keyframes round {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}

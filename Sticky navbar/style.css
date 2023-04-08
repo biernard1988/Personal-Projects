@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  min-height: 200vh;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  transition: 0.5s;
+}
+
+nav .logo {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+nav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+  list-style-type: none;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 10px 10px;
+}
+
+nav.sticky {
+  padding: 5px 100px;
+  background-color: white;
+}
+
+nav.sticky ul li a {
+  color: black;
+}
+
+nav.sticky ul li a:hover {
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: 0.5s;
+  padding: 10px 10px;
+}
+
+nav.sticky .logo{
+  color: black;
+}

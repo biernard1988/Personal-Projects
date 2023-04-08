@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.logo {
+  color: #12131a;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.575);
+}
+
+.logo span {
+  color: #e099a2;
+  margin-left: 5px;
+  letter-spacing: 10px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #12131a;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+nav ul li a:hover {
+  color: #e099a2;
+  transition: 0.3s;
+}
+
+button {
+  background: #12131a;
+  padding: 12px 28px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+  background: transparent;
+  color: #12131a;
+  box-shadow: 0 0 10px #e099a2, 0 0 10px #e099a2, 0 0 10px #e099a2;
+}
+
+header {
+  position: absolute;
+  width: 94%;
+  margin: auto;
+  padding: 13px 0;
+  top: 10px;
+  left: 30px;
+  right: 30px;
+  border-radius: 50px;
+  z-index: 2;
+  background-color: rgba(221, 209, 209, 0.918);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
+}
+
+.bg {
+  position: absolute;
+  background-image: url(pink-tea3.jpg);
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translateY(-50%);
+}
+
+.content h4 {
+  color: #12131a;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+.content h1 {
+  color: #12131a;
+  font-size: 150px;
+  letter-spacing: 5px;
+  line-height: 180px;
+  margin-bottom: 40px;
+}
+
+.content h3 {
+  color: #12131a;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+
+.btn1 {
+  position: absolute;
+  top: 90%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+
+  background-color: #e099a2b7;
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.btn1 a {
+  background: #12131a;
+  color: white;
+  padding: 5px 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn1 a:hover {
+  background-color: transparent;
+  color: black;
+  transition: 0.3s;
+}
+
+.work {
+  /* menu na vertical */
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 30%;
+  left: -6%;
+}
+
+.work a {
+  text-decoration: none;
+  color: #12131a;
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.work a:hover {
+  color: #e099a2;
+  transition: 0.3s;
+}
+
+.social {
+  position: absolute;
+  left: 47.5%;
+  bottom: 0;
+}
+
+.social ul {
+  display: inline-flex;
+  margin: 10px auto;
+}
+
+.social ul li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.social ul li i {
+  color: #12131a;
+  font-size: 20px;
+}
+
+.social ul li i:hover {
+  transform: scale(1.3);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.last {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.last a {
+  color: #12131a;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px;
+}

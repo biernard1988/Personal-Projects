@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <style>
+      .calculator {
+        width: 400px;
+        height: 500px;
+        margin: 0 auto;
+        background-color: rgb(84, 155, 67);
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .display {
+        height: 70px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 30px;
+        text-align: right;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .btn {
+        width: 70px;
+        height: 70px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: white;
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display" id="display"></div>
+      <div class="buttons">
+        <button
+          class="btn"
+          value="1"
+          onclick="document.getElementById('display').innerHTML += '1'"
+        >
+          1
+        </button>
+        <button
+          class="btn"
+          value="2"
+          onclick="document.getElementById('display').innerHTML += '2'"
+        >
+          2
+        </button>
+        <button
+          class="btn"
+          value="3"
+          onclick="document.getElementById('display').innerHTML += '3'"
+        >
+          3
+        </button>
+        <button
+          class="btn"
+          value="+"
+          onclick="document.getElementById('display').innerHTML += '+'"
+        >
+          +
+        </button>
+        <button
+          class="btn"
+          value="4"
+          onclick="document.getElementById('display').innerHTML += '4'"
+        >
+          4
+        </button>
+        <button
+          class="btn"
+          value="5"
+          onclick="document.getElementById('display').innerHTML += '5'"
+        >
+          5
+        </button>
+        <button
+          class="btn"
+          value="6"
+          onclick="document.getElementById('display').innerHTML += '6'"
+        >
+          6
+        </button>
+        <button
+          class="btn"
+          value="-"
+          onclick="document.getElementById('display').innerHTML += '-'"
+        >
+          -
+        </button>
+        <button
+          class="btn"
+          value="7"
+          onclick="document.getElementById('display').innerHTML += '7'"
+        >
+          7
+        </button>
+        <button
+          class="btn"
+          value="8"
+          onclick="document.getElementById('display').innerHTML += '8'"
+        >
+          8
+        </button>
+        <button
+          class="btn"
+          value="9"
+          onclick="document.getElementById('display').innerHTML += '9'"
+        >
+          9
+        </button>
+        <button
+          class="btn"
+          value="*"
+          onclick="document.getElementById('display').innerHTML += '*'"
+        >
+          *
+        </button>
+        <button
+          class="btn"
+          value="C"
+          onclick="document.getElementById('display').innerHTML = ''"
+        >
+          C
+        </button>
+        <button
+          class="btn"
+          value="0"
+          onclick="document.getElementById('display').innerHTML += '0'"
+        >
+          0
+        </button>
+        <button
+          class="btn"
+          value="="
+          onclick="document.getElementById('display').innerHTML = eval(document.getElementById('display').innerHTML)"
+        >
+          =
+        </button>
+        <button
+          class="btn"
+          value="/"
+          onclick="document.getElementById('display').innerHTML += '/'"
+        >
+          /
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
