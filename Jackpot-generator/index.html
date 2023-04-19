@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gerador de Números do Euromilhões</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Gerador de Números do Euromilhões</h1>
+    <p>Selecione a quantidade de jogos que deseja gerar:</p>
+    <input type="number" id="numJogos" min="1" max="10" value="1" />
+    <button onclick="gerarJogos()">Gerar</button>
+    <hr />
+    <div id="resultado"></div>
+    <script>
+      const numeros = [4, 6, 9, 20, 28, 30, 32, 34, 38, 40, 41, 42, 43, 46, 49];
+      const estrelas = [2, 3, 4, 6, 8, 9, 10, 11];
+
+      function gerarJogos() {
+        const numJogos = document.getElementById("numJogos").value;
+        let resultado = "";
+        for (let i = 1; i <= numJogos; i++) {
+          let numerosSorteados = [];
+          let estrelasSorteadas = [];
+          while (numerosSorteados.length < 5) {
+            const numeroSorteado =
+              numeros[Math.floor(Math.random() * numeros.length)];
+            if (!numerosSorteados.includes(numeroSorteado)) {
+              numerosSorteados.push(numeroSorteado);
+            }
+          }
+          while (estrelasSorteadas.length < 2) {
+            const estrelaSorteada =
+              estrelas[Math.floor(Math.random() * estrelas.length)];
+            if (!estrelasSorteadas.includes(estrelaSorteada)) {
+              estrelasSorteadas.push(estrelaSorteada);
+            }
+          }
+          resultado +=
+            "<p><strong>Jogo " +
+            i +
+            ":</strong> " +
+            numerosSorteados.join(", ") +
+            " - " +
+            estrelasSorteadas.join(", ") +
+            "</p>";
+        }
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+    </script>
+  </body>
+</html>
