@@ -9,8 +9,24 @@
     <script src="jogo.js"></script>
   </head>
   <body onresize="ajustaTamanhoPalcoJogo()">
+    <div class="painel">
+      <div class="vidas">
+        <img id="v1" src="imagens/coracao_cheio.png" alt="Coração vazio" />
+        <img id="v2" src="imagens/coracao_cheio.png" alt="Coração cheio" />
+        <img id="v3" src="imagens/coracao_cheio.png" alt="Coração cheio" />
+      </div>
+      <div class="cronometro">
+        Tempo restante: <span id="cronometro"></span>
+      </div>
+    </div>
+
     <script>
-      posicaoRandomica();
+      document.getElementById("cronometro").innerHTML = tempo;
+
+      var criaMosca = setInterval(function () {
+        posicaoRandomica();
+      }, criaMosquitoTempo);
+      /* executa aparecimento dos mosquitos a cada X segundo */
     </script>
   </body>
 </html>
